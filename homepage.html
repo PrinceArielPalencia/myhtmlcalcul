@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<script>
+	function logout(){
+		let response = confirm("are you sure you want to log out?");
+		
+		if(response){
+
+
+	    	window.close('home.html');
+		    window.open('index.html');
+		}
+	}
+</script>
+</body>
+      <h1>WELCOME TO LOGINCULATOR</h1>
+
+      <button type ="submit" onclick="logout()"> logout </button>
+
+      <br>
+      <br>
+
+
+      <div class="div1">
+      	<h1>MAIN PAGE</h1>
+
+      	<p>The result of adding 5 + 2 + 3 is:</p>
+      	<p id="demo1"></p>
+      	<button type="submit" onclick="adding()"> Show Result </button>
+
+      	<script>
+      		function adding(){
+      			let x = 5 + 2 + 3;
+      			document.getElementById("demo1").innerHTML = x;
+      		}
+      	</script>
+      	<br>
+      	<br>
+      	<hr>
+      	<br>
+
+      	<h3>Enter Number:</h3>
+      	<input type="number" id="num1">
+      	<input type="number" id="num2">
+      	<button type="button"onclick="addnum()">add</button>
+      	<p>The sum is: </p><p id="demo2"></p>
+
+      	<script>
+      		function addnum(){
+      			let a = parseInt(document.getElementById("num1").value);
+      			let b = parseInt(document.getElementById("num2").value);
+      			let x = a + b;
+      			document.getElementById("demo2").innerHTML = x;
+      			
+      		}
+      	</script>
+
+
+      	</script>
+      	<br>
+      	<br>
+      	<hr>
+      	<br>
+
+      	<h3>Input Two numbers:</h3>
+      	<input type="number" id="num3">
+      	<input type="number" id="num4">
+      	<button type="button"onclick="subnum()">subtract</button>
+      	<p>The difference is: </p><p id="demo3"></p>
+
+      	<script>
+      		function subnum(){
+      			let a = parseInt(document.getElementById("num3").value);
+      			let b = parseInt(document.getElementById("num4").value);
+      			let x = a - b;
+      			document.getElementById("demo3").innerHTML = x;
+      			
+      		}
+      	</script>
+
+      	</script>
+      	<br>
+      	<br>
+      	<hr>
+      	<br>
+
+      	<h3>Input Two numbers:</h3>
+      	<input type="number" id="num5">
+      	<input type="number" id="num6">
+      	<button type="button"onclick="mulnum()">multiply</button>
+      	<p>The product is: </p><p id="demo4"></p>
+
+      	<script>
+      		function mulnum(){
+      			let a = parseInt(document.getElementById("num5").value);
+      			let b = parseInt(document.getElementById("num6").value);
+      			let x = a * b;
+      			document.getElementById("demo4").innerHTML = x;
+      			
+      		}
+      	</script>
+
+      	</script>
+      	<br>
+      	<br>
+      	<hr>
+      	<br>
+
+      	<h3>Input Two numbers:</h3>
+      	<input type="number" id="num7">
+      	<input type="number" id="num8">
+      	<button type="button"onclick="divnum()">divide</button>
+      	<p>The quotient is: </p><p id="demo5"></p>
+
+      	<script>
+      		function divnum(){
+      			let a = parseInt(document.getElementById("num7").value);
+      			let b = parseInt(document.getElementById("num8").value);
+      			let x = a / b;
+      			document.getElementById("demo5").innerHTML = x;
+      			
+      		}
+      	</script>
+
+</html>
